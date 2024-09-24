@@ -2,11 +2,11 @@ const About = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-4 text-center">Passionate About Innovation</h1>
-      <p className="text-xl mb-8 text-center">We are a team of creators, engineers, and strategists committed to helping startups and entrepreneurs realize their visions through expert product development services.</p>
+      <p className="text-xl mb-8 text-center">We are ProtoLaunch, a team of creators, engineers, and strategists committed to helping startups and entrepreneurs realize their visions through expert product development services.</p>
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-        <p>Our mission is to empower startups and innovators by providing affordable, cutting-edge prototype and development services. We thrive on creating solutions that push boundaries and shape the future.</p>
+        <p>Our mission at ProtoLaunch is to empower startups and innovators by providing affordable, cutting-edge prototype and development services. We thrive on creating solutions that push boundaries and shape the future.</p>
       </section>
 
       <section className="mb-12">
@@ -46,7 +46,7 @@ const About = () => {
       </section>
 
       <section>
-        <h2 className="text-3xl font-bold mb-4">Why Work With Us?</h2>
+        <h2 className="text-3xl font-bold mb-4">Why Work With ProtoLaunch?</h2>
         <ul className="list-disc list-inside space-y-2">
           <li><strong>Deep Expertise in Startups</strong>: We know the unique challenges startups face and are dedicated to helping you navigate them.</li>
           <li><strong>Speed to Market</strong>: We understand that time is critical for startups. Our processes are designed to get your product to market quickly.</li>

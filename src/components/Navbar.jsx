@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="text-2xl font-bold text-purple-600 dark:text-purple-400">
-              ProLaunch
+              ProtoLaunch
             </Link>
           </div>
           <div className="hidden md:block">
