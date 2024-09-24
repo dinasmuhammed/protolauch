@@ -1,5 +1,7 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Rocket, Zap, Shield, MessageCircle } from 'lucide-react';
+import TeamSection from '../components/TeamSection';
 
 const Home = () => {
   const openWhatsApp = () => {
@@ -48,7 +50,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="text-center">
+      <TeamSection />
+
+      <section className="text-center mt-16">
         <h2 className="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-200">Ready to Launch Your Vision?</h2>
         <button
           onClick={openWhatsApp}
