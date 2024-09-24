@@ -28,17 +28,17 @@ const About = () => {
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Meet the Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">John Doe</h3>
+            <h3 className="text-xl font-semibold mb-2">Muhammed Adnan</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-2">Co-founder & CEO</p>
-            <p className="text-sm md:text-base">A visionary leader with 15 years of experience in product development and startup incubation.</p>
+            <p className="text-sm md:text-base">A visionary leader with 1 years of experience in product development and startup incubation.</p>
           </div>
           <div className="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Jane Smith</h3>
+            <h3 className="text-xl font-semibold mb-2">AdilAli</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-2">CTO</p>
             <p className="text-sm md:text-base">A seasoned software architect with expertise in building scalable tech solutions for startups.</p>
           </div>
           <div className="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Mike Johnson</h3>
+            <h3 className="text-xl font-semibold mb-2">Hansir ali</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-2">Lead Designer</p>
             <p className="text-sm md:text-base">An expert in UX/UI design with a knack for creating user-friendly digital experiences.</p>
           </div>
