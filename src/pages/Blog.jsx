@@ -1,8 +1,8 @@
 const BlogPost = ({ title, excerpt }) => (
-  <div className="bg-white shadow-md rounded-lg p-6 mb-6">
+  <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mb-6">
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600">{excerpt}</p>
-    <a href="#" className="text-blue-600 hover:text-blue-800 mt-2 inline-block">Read more</a>
+    <p className="text-gray-600 dark:text-gray-400">{excerpt}</p>
+    <a href="#" className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 mt-2 inline-block">Read more</a>
   </div>
 );
 
@@ -28,8 +28,8 @@ const Blog = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-4 text-center">Stay Ahead of the Curve</h1>
-      <p className="text-xl mb-12 text-center">Explore our blog for industry insights, product development tips, and startup success stories.</p>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">Stay Ahead of the Curve</h1>
+      <p className="text-lg md:text-xl mb-12 text-center">Explore our blog for industry insights, product development tips, and startup success stories.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {blogPosts.map((post, index) => (

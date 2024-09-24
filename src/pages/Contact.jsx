@@ -15,9 +15,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to a server
     console.log('Form submitted:', formData);
-    // Reset form after submission
     setFormData({
       name: '',
       email: '',
@@ -30,8 +28,8 @@ const Contact = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-4 text-center">Let's Start Building Together</h1>
-      <p className="text-xl mb-8 text-center">Have a project in mind? We'd love to hear from you. Let's collaborate and bring your ideas to life.</p>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">Let's Start Building Together</h1>
+      <p className="text-lg md:text-xl mb-8 text-center">Have a project in mind? We'd love to hear from you. Let's collaborate and bring your ideas to life.</p>
 
       <div className="max-w-2xl mx-auto">
         <form onSubmit={handleSubmit} className="space-y-6">
