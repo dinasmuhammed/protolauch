@@ -1,17 +1,21 @@
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const openWhatsApp = () => {
+    window.open('https://wa.me/919656778508', '_blank');
+  };
+
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-md">
+    <nav className="bg-white dark:bg-gray-900 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-purple-600 dark:text-purple-400">
+            <Link to="/" className="text-2xl font-bold gradient-text">
               ProtoLaunch
             </Link>
           </div>
@@ -24,8 +28,15 @@ const Navbar = () => {
               <Link to="/blog" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium">Blog</Link>
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-4">
             <DarkModeToggle />
+            <button
+              onClick={openWhatsApp}
+              className="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-purple-700 transition-colors inline-flex items-center"
+            >
+              <MessageCircle className="mr-2 h-4 w-4" />
+              Free Consultation
+            </button>
           </div>
           <div className="-mr-2 flex md:hidden">
             <button
@@ -51,8 +62,15 @@ const Navbar = () => {
             <Link to="/contact" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
             <Link to="/blog" className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 block px-3 py-2 rounded-md text-base font-medium">Blog</Link>
           </div>
-          <div className="px-4 pb-3">
+          <div className="px-4 pb-3 flex items-center justify-between">
             <DarkModeToggle />
+            <button
+              onClick={openWhatsApp}
+              className="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-purple-700 transition-colors inline-flex items-center"
+            >
+              <MessageCircle className="mr-2 h-4 w-4" />
+              Free Consultation
+            </button>
           </div>
         </div>
       )}
