@@ -36,7 +36,7 @@ const Contact = () => {
       <div className="max-w-2xl mx-auto">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
             <input
               type="text"
               id="name"
@@ -44,11 +44,11 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
             <input
               type="email"
               id="email"
@@ -56,11 +56,11 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             />
           </div>
           <div>
-            <label htmlFor="projectDescription" className="block text-sm font-medium text-gray-700">Project Description</label>
+            <label htmlFor="projectDescription" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Project Description</label>
             <textarea
               id="projectDescription"
               name="projectDescription"
@@ -68,18 +68,18 @@ const Contact = () => {
               onChange={handleChange}
               required
               rows="4"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             ></textarea>
           </div>
           <div>
-            <label htmlFor="budget" className="block text-sm font-medium text-gray-700">Budget Range</label>
+            <label htmlFor="budget" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Budget Range</label>
             <select
               id="budget"
               name="budget"
               value={formData.budget}
               onChange={handleChange}
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             >
               <option value="">Select a range</option>
               <option value="0-5000">$0 - $5,000</option>
@@ -89,7 +89,7 @@ const Contact = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="timeline" className="block text-sm font-medium text-gray-700">Timeline</label>
+            <label htmlFor="timeline" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Timeline</label>
             <input
               type="text"
               id="timeline"
@@ -97,7 +97,7 @@ const Contact = () => {
               value={formData.timeline}
               onChange={handleChange}
               placeholder="e.g., 3 months, 6 months"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             />
           </div>
           <div>
@@ -110,9 +110,9 @@ const Contact = () => {
 
       <div className="mt-12 text-center">
         <h2 className="text-2xl font-bold mb-4">Contact Details</h2>
-        <p>Email: adnanmuhammad4393@gmail.com</p>
-        <p>Phone: +91 965678508</p>
-        <p>Location: [Company Address]</p>
+        <p className="mb-2">Email: adnanmuhammad4393@gmail.com</p>
+        <p className="mb-2">Phone: +91 965678508</p>
+        <p className="mb-2">Location: Behind KMR Steels, Vazakkam Vettil, Ulleryil 19, Kerala 673315</p>
       </div>
 
       <div className="mt-8 text-center">
