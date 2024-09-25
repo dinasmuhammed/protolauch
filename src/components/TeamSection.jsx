@@ -4,7 +4,7 @@ import { User } from 'lucide-react';
 
 const fetchTeamData = async () => {
   try {
-    const response = await fetch('https://adwebcomicagency.vercel.app/api/team', {
+    const response = await fetch('https://adwebcomicagency.vercel.app/#team', {
       mode: 'cors', // This might help with CORS, but the server needs to allow it
     });
     if (!response.ok) {
